@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart quantity example</title>
+</head>
+<body>
+    <!--Creates a button that when clicked runs a script that displays the message "Cart Quantity:" and adds the value of the variable "cartQuantity"-->
+    <button onclick="console.log(`Cart Quantity: ${cartQuantity}`)">Show Quantity</button>
+
+    <!--Creates a button that when clicked adds 1 to the variable "cartquantity" and displays that in the console-->
+    <button onclick="cartQuantity += 1; console.log(`Cart Quantity: ${cartQuantity}`)">Add to Cart</button>
+
+    <!--Creates a button that when clicked adds 2 to the variable "cartquantity" and displays that in the console-->
+    <Button onclick="cartQuantity += 2; console.log(`cartQuantity: ${cartQuantity}`)">+2</Button>
+    
+    <!--Creates a button that when clicked adds 3 to the variable "cartquantity" and displays that in the console-->
+    <button  onclick="cartQuantity += 3; console.log(`cartQuantity: ${cartQuantity}`)">+3</button>
+       
+    <!--Creates a button that when clicked resets the variable"cartquantity" to a value of 0 and displays that in the console-->
+    <button onclick="cartQuantity = 0; console.log(`Cart Reset ${cartQuantity}`)">Reset Cart</button>
+
+
+    <script>
+        //creates the variable "cartQuantity" with a value of 0
+        let cartQuantity = 0; 
+    </script>
+</body>
+</html>
